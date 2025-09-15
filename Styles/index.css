@@ -1,0 +1,146 @@
+body {
+    background-color: #9dbebb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #FDFFFF; /* Setting the font color for the labels */
+}
+
+.container {
+    width: 954px;
+    height: 594px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to right, #BE0909 64%, #FFB039 36%);
+    display: flex;
+    position: relative;
+}
+
+.left-section {
+    width: 609px;
+    height: 594px;
+    padding-left: 65px;
+    padding-top: 65px;
+    box-sizing: border-box;
+    position: relative; /* To establish a positioning context for the button */
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 21px; /* Slightly increased space between label and input */
+    letter-spacing: 10%;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #9DBEBB;
+    color: white; /* Text color for user input */
+    font-family: inherit;
+    font-size: inherit;
+    padding: 5px 10px;
+    letter-spacing: 10%;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+#full-name {
+    width: 400px;
+}
+
+#message {
+    width: 390px;
+    resize: vertical; /* Allows vertical resizing only */
+    max-height: 54px; /* Sets a maximum height (approx. 2-3 lines) */
+    min-height: 22px;
+}
+
+
+#email,
+#message-regarding {
+    width: 160px;
+}
+
+/* Placeholder color change */
+::placeholder {
+    color: #FDFFFF;
+}
+
+#email::placeholder,
+#message::placeholder {
+    letter-spacing: 0.3em;
+}
+
+/* Specific spacing between form elements */
+.form-group:nth-of-type(1) {
+    margin-bottom: 21px;
+}
+.form-group:nth-of-type(2) {
+    margin-bottom: 31px;
+}
+.form-group:nth-of-type(3) {
+    margin-bottom: 21px;
+}
+.form-group:nth-of-type(4) {
+    margin-bottom: 56px;
+}
+
+#submit-btn {
+    width: 202px;
+    height: 40px;
+    background-color: #468189;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 10%;
+    font-weight: bold;
+    /* Positioning to make it immovable */
+    position: absolute;
+    bottom: 64px;
+    left: 164px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#submit-btn:hover {
+    background-color: #5ba3ad; /* Slightly lighter shade for hover effect */
+}
+
+#submit-btn:active {
+    transform: scale(0.98); /* Scales down slightly for a 'click' effect */
+    background-color: #3f7078; /* Slightly darker shade for active state */
+}
+
+.right-section {
+    width: 345px;
+    height: 594px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.right-section img {
+    height: auto;
+    width: auto;
+    margin-top: 127px;
+    margin-right: 79px;
+}

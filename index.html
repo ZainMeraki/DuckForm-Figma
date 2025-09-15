@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/reset.css">
+    <link rel="stylesheet" href="/Styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="full-name">FULL NAME</label>
+                    <input type="text" id="full-name" name="full-name" required autofocus>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message-regarding">MESSAGE REGARDING</label>
+                    <input type="text" id="message-regarding" name="message-regarding">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" rows="1" cols="1" name="message" required placeholder="Your Message"></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn">SEND MESSAGE</button>
+            </form>
+        </div>
+        <div class="right-section">
+            <img src="/Images/hiclipart.png" alt="Duck.">
+        </div>
+    </div>
+</body>
+</html>
